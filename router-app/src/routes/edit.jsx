@@ -20,6 +20,7 @@ export async function action({request, params}){
 }
 export async function loader({params}){
   console.log("render desde edit")
+  console.log("render desde edit")
   const contact = await getContact(params.contactId) 
   return ({contact})
 }
